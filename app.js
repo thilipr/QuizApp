@@ -44,6 +44,12 @@ for(let i=0; i< optionLen; i++){
     availablOptions.push(i);
 }
 
+for(let i=0; i< optionLen; i++){
+    const option = document.createElement("div");
+    option.innerHTML = currentQuestion.option[i];
+    option.className ="option";
+    optionContainer.appendChild(option)
+}
 //console.log(currentQuestion.options);
 
 questionCounter++;
