@@ -1,0 +1,51 @@
+Q.1:The behaviour of the instances present of a class inside a method is defined by __________
+	a)Method
+	b)Classes
+	c)Interfaces
+	d)Classes and Interfaces
+		ANSWER : b
+
+			 Objects of the class are also known as instances of the class. The behaviour of the instance of a class is defined by the class and is shared by all instances.
+
+Q.2:The keyword or the property that you use to refer to an object through which they were invoked is _________
+	a)from
+	b)to
+	c)this
+	d)object
+		ANSWER : c
+			
+			‘this’ keyword is used to refer to the object through which the properties or methods were invoked. This use of ‘this’ is a fundamental characteristic of the methods of any class.
+	
+Q.3:What will be the output of the following JavaScript code?
+	var o = new F();
+        o.constructor === F
+
+	a)false
+	b)true
+	c)0
+	d)1
+
+		ANSWER : b
+			 Constructor is a function property of the class which is used to create objects of that class. In the above code, both statements create an instance of the class.
+
+		
+Q.4:The basic difference between JavaScript and Java is _________
+
+	a)There is no difference
+	b)Functions are considered as fields
+	c)Variables are specific
+	d)Functions are values, and there is no hard distinction between methods
+
+		ANSWER : d
+			Java is an OOP programming language while JavaScript is an OOP scripting language. The basic difference between JavaScript and Java is that the functions are values, and there is no hard distinction between methods and fields.
+
+	
+Q.5:The meaning for Augmenting classes is that ___________
+
+	a)objects inherit prototype properties even in a dynamic state
+	b)objects inherit prototype properties only in a dynamic state
+	c)objects inherit prototype properties in the static state
+	d)object doesn’t inherit prototype properties in the static state
+
+		ANSWER : a
+			JavaScript’s prototype-based inheritance mechanism is dynamic an object inherits properties from its prototype, even if the prototype changes after the object is created. This means that we can augment JavaScript classes simply by adding new methods to their prototype objects.
