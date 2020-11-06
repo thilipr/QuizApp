@@ -44,7 +44,16 @@ for(let i=0; i< optionLen; i++){
     availablOptions.push(i);
 }
 
-
+for(let i=0; i< optionLen; i++){
+    const optonIndex = availableOptions[Math.floor(Math.random()* availablOptions.length)];
+    const index2 = availableOptions.indexOf(optonIndex);
+    availablOptions.splice(index2,1);
+    const option = document.createElement("div");
+    option.innerHTML = currentQuestion.option[optonIndex];
+    option.id = optonIndex;
+    option.className ="option";
+    optionContainer.appendChild(option)
+}
 //console.log(currentQuestion.options);
 
 questionCounter++;
