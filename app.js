@@ -27,7 +27,7 @@ questionNumber.innerHTML = "Question" + (questionCounter + 1) + " of " + quiz.le
 const questionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
 // console.log(questionIndex);
 currentQuestion = questionIndex;
-questionText.innerHTML = currentQuestion.q;
+questionText.innerHTML = currentQuestion.q; // ERROR : Uncaught TypeError:Cannot read property 'q'of undefined at getNewQuestion (app.js:30)
 
 //get the position of 'questionIndex' from the availableQuestion Array
 const index1 = availableQuestions.indexOf(questionIndex);
@@ -71,6 +71,6 @@ function next(){
 window.onload = function(){
     //set all questions in AvailableQuestion array
     setAvailableQuestions();
-    //we will call getQusetion()funtion
-    getNewQuestion();
+    //we will call getQusetion()funtion 
+    getNewQuestion(); // ERROR : Uncaught TypeError:Cannot read property 'q'of undefined at window.onload (app.js:75)
 }
